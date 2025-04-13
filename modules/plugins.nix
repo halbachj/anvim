@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./tinymist.nix
+                #./tinymist.nix
   ];
   config.vim = {
     statusline.lualine.enable = true;
