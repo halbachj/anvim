@@ -11,8 +11,11 @@
     statusline.lualine.enable = true;
 
     options = {
-      tabstop = 2;
-      softtabstop = 2;
+      tabstop = 8;
+      softtabstop = 0;
+      expandtab = true;
+      shiftwidth = 2;
+      smarttab = true;
     };
 
   };
