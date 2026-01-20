@@ -16,27 +16,27 @@ in
   config.vim = {
     extraPackages = [ pkgs.sqlite ];
 
-    lsp.lspconfig = {
-      enable = true;
-      sources.texlab = ''
-        lspconfig.texlab.setup{
-          capabilities = capabilities;
-          on_attach = default_on_attach;
-          cmd = {"${pkgs.texlab}/bin/texlab"};
-        }
-      '';
-    };
+    #lsp.lspconfig = {
+    #  enable = true;
+    #  sources.texlab = ''
+    #    lspconfig.texlab.setup{
+    #      capabilities = capabilities;
+    #      on_attach = default_on_attach;
+    #      cmd = {"${pkgs.texlab}/bin/texlab"};
+    #    }
+    #  '';
+    #};
 
-    treesitter = {
-      enable = true;
-      grammars = [
-        pkgs.vimPlugins.nvim-treesitter.builtGrammars.latex
-        pkgs.vimPlugins.nvim-treesitter.builtGrammars.bibtex
-        pkgs.vimPlugins.nvim-treesitter.builtGrammars.yaml
-      ];
-    };
+    #treesitter = {
+    #  enable = true;
+    #  grammars = [
+    #    pkgs.vimPlugins.nvim-treesitter.builtGrammars.latex
+    #    pkgs.vimPlugins.nvim-treesitter.builtGrammars.bibtex
+    #    pkgs.vimPlugins.nvim-treesitter.builtGrammars.yaml
+    #  ];
+    #};
 
-    lazy.plugins = {
+    #lazy.plugins = {
       #vimtex = {
       #  package = pkgs.vimPlugins.vimtex;
       #  ft = ["tex" "plaintex" "bib"];
@@ -78,6 +78,6 @@ in
       #  package = pkgs.vimPlugins.dial-nvim;
       #  event = ["BufReadPost" "BufNewFile"];
       #};
-    };
+    #};
   };
 }
