@@ -13,19 +13,19 @@
     #    enable = true;
     #    gitsigns.enable = true;
     #};
-    #comments.comment-nvim.enable = true;
-    #formatter.conform-nvim.enable = true;
-    #diagnostics.nvim-lint.enable = true;
+    comments.comment-nvim.enable = true;
+    formatter.conform-nvim.enable = true;
+    diagnostics.nvim-lint.enable = true;
     utility.surround.enable = true;
-    #notes.obsidian = {
-    #  enable = true;
-    #  setupOpts.workspaces = [
-    #    {
-    #      name = "notes";
-    #      path = "/home/johann/Projects/anvim";
-    #    }
-    #  ];
-    #};
+    notes.obsidian = {
+      enable = true;
+      setupOpts.workspaces = [
+        {
+          name = "notes";
+          path = "/home/johann/Projects/anvim";
+        }
+      ];
+    };
     notes.todo-comments.enable = true;
     utility.preview.glow.enable = true;
     snippets.luasnip.enable = true;
