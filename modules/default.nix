@@ -2,8 +2,8 @@
 
   imports = [
     ./core.nix
-    ./plugins.nix
-    ./languages.nix
-    ./academic.nix
+    #./plugins.nix
+    #./languages.nix
+    #./academic.nix
   ];
 }
