@@ -12,8 +12,8 @@
       #latex.enable = true;
       #arduino.enable = true;
       java.enable = true;
+      markdown.enable = true;
     };
   };
 
 }
-

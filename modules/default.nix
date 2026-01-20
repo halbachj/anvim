@@ -4,5 +4,6 @@
     ./core.nix
     ./plugins.nix
     ./languages.nix
+    ./academic.nix
   ];
 }
