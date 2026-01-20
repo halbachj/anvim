@@ -9,10 +9,10 @@
     #telescope.enable = true;
     #autocomplete.nvim-cmp.enable = true;
     #binds.whichKey.enable = true;
-    #git = {
-    #    enable = true;
-    #    gitsigns.enable = true;
-    #};
+    git = {
+        enable = true;
+        gitsigns.enable = true;
+    };
     comments.comment-nvim.enable = true;
     formatter.conform-nvim.enable = true;
     diagnostics.nvim-lint.enable = true;
