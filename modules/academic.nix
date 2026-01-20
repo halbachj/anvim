@@ -37,22 +37,22 @@ in
     };
 
     lazy.plugins = {
-      vimtex = {
-        package = pkgs.vimPlugins.vimtex;
-        ft = ["tex" "plaintex" "bib"];
-      };
+      #vimtex = {
+      #  package = pkgs.vimPlugins.vimtex;
+      #  ft = ["tex" "plaintex" "bib"];
+      #};
 
-      zotcite = {
-        package = pkgs.vimPlugins.zotcite;
-        ft = zotciteFiletypes;
-        setupModule = "zotcite";
-        setupOpts = {};
-        after = ''
-          pcall(function()
-            require("telescope").load_extension("zotcite")
-          end)
-        '';
-      };
+      #zotcite = {
+      #  package = pkgs.vimPlugins.zotcite;
+      #  ft = zotciteFiletypes;
+      #  setupModule = "zotcite";
+      #  setupOpts = {};
+      #  after = ''
+      #    pcall(function()
+      #      require("telescope").load_extension("zotcite")
+      #    end)
+      #  '';
+      #};
 
       #"plenary.nvim" = {
       #  package = pkgs.vimPlugins.plenary-nvim;
