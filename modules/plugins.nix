@@ -5,8 +5,8 @@
                 #./tinymist.nix
   ];
   config.vim = {
-    #statusline.lualine.enable = true;
-    #telescope.enable = true;
+    statusline.lualine.enable = true;
+    telescope.enable = true;
     autocomplete.nvim-cmp.enable = true;
     binds.whichKey.enable = true;
     #git = {
