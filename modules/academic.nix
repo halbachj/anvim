@@ -36,48 +36,48 @@ in
       ];
     };
 
-    #lazy.plugins = {
-      #vimtex = {
-      #  package = pkgs.vimPlugins.vimtex;
-      #  ft = ["tex" "plaintex" "bib"];
-      #};
+    lazy.plugins = {
+      vimtex = {
+        package = pkgs.vimPlugins.vimtex;
+        ft = ["tex" "plaintex" "bib"];
+      };
 
-      #zotcite = {
-      #  package = pkgs.vimPlugins.zotcite;
-      #  ft = zotciteFiletypes;
-      #  setupModule = "zotcite";
-      #  setupOpts = {};
-      #  after = ''
-      #    pcall(function()
-      #      require("telescope").load_extension("zotcite")
-      #    end)
-      #  '';
-      #};
+      zotcite = {
+        package = pkgs.vimPlugins.zotcite;
+        ft = zotciteFiletypes;
+        setupModule = "zotcite";
+        setupOpts = {};
+        after = ''
+          pcall(function()
+            require("telescope").load_extension("zotcite")
+          end)
+        '';
+      };
 
-      #"plenary.nvim" = {
-      #  package = pkgs.vimPlugins.plenary-nvim;
-      #  lazy = false;
-      #};
+      "plenary.nvim" = {
+        package = pkgs.vimPlugins.plenary-nvim;
+        lazy = false;
+      };
 
-      #"vim-pencil" = {
-      #  package = pkgs.vimPlugins.vim-pencil;
-      #  ft = ["markdown" "tex" "text"];
-      #  after = ''
-      #    vim.g["pencil#wrapModeDefault"] = "soft"
-      #  '';
-      #};
+      "vim-pencil" = {
+        package = pkgs.vimPlugins.vim-pencil;
+        ft = ["markdown" "tex" "text"];
+        after = ''
+          vim.g["pencil#wrapModeDefault"] = "soft"
+        '';
+      };
 
-      #"nvim-bqf" = {
-      #  package = pkgs.vimPlugins.nvim-bqf;
-      #  ft = ["qf"];
-      #  setupModule = "bqf";
-      #  setupOpts = {};
-      #};
+      "nvim-bqf" = {
+        package = pkgs.vimPlugins.nvim-bqf;
+        ft = ["qf"];
+        setupModule = "bqf";
+        setupOpts = {};
+      };
 
-      #"dial.nvim" = {
-      #  package = pkgs.vimPlugins.dial-nvim;
-      #  event = ["BufReadPost" "BufNewFile"];
-      #};
-    #};
+      "dial.nvim" = {
+        package = pkgs.vimPlugins.dial-nvim;
+        event = ["BufReadPost" "BufNewFile"];
+      };
+    };
   };
 }
