@@ -30,6 +30,6 @@
     utility.preview.glow.enable = true;
     snippets.luasnip.enable = true;
     autopairs.nvim-autopairs.enable = true;
-    tinymist.enable = true;
+    #tinymist.enable = true;
   };
 }
