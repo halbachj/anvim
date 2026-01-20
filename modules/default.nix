@@ -3,7 +3,7 @@
   imports = [
     ./core.nix
     #./plugins.nix
-    #./languages.nix
+    ./languages.nix
     ./academic.nix
   ];
 }
