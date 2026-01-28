@@ -3,6 +3,7 @@
 {
   config.vim = {
     treesitter.enable = true;
+    startPlugins = lib.mkAfter ["nvim-treesitter"];
     languages = {
       enableLSP = true;
       enableTreesitter = true;
@@ -13,11 +14,6 @@
       #arduino.enable = true;
       java.enable = true;
       markdown.enable = true;
-    };
-
-    lazy.plugins."nvim-treesitter" = {
-      package = pkgs.vimPlugins.nvim-treesitter;
-      lazy = false;
     };
   };
 
