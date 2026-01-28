@@ -14,6 +14,11 @@
       java.enable = true;
       markdown.enable = true;
     };
+
+    lazy.plugins."nvim-treesitter" = {
+      package = pkgs.vimPlugins.nvim-treesitter;
+      lazy = false;
+    };
   };
 
 }
