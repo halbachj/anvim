@@ -3,7 +3,7 @@
 {
   config.vim = {
     treesitter.enable = true;
-    startPlugins = lib.mkAfter ["nvim-treesitter"];
+    startPlugins = lib.mkAfter [ pkgs.vimPlugins.nvim-treesitter ];
     languages = {
       enableLSP = true;
       enableTreesitter = true;
